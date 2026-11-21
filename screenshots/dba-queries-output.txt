@@ -1,0 +1,19 @@
+Changed database context to 'TelematicsLab'.
+=== Row counts per table ===
+table_name row_count
+---------- ---------
+Driver 3
+TelemetryReading 12
+TripLog 3
+Vehicle 3
+Violation 2
+ 
+=== Fuel-siphoning pattern (drop > 10 L while stationary) ===
+plate_number trip_id recorded_at prev_fuel fuel_level_liters fuel_drop_liters
+------------ ------- ----------- --------- ----------------- ----------------
+T000BBB 2 2026-11-10 08:00:00 69.80 48.00 21.80
+ 
+=== Overspeed readings above 100 km/h ===
+full_name plate_number recorded_at speed_kmh
+--------- ------------ ----------- ---------
+Test Driver One T000AAA 2026-11-10 07:00:00 118.00

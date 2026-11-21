@@ -1,0 +1,12 @@
+﻿# Never commit database files, backups, secrets or real data
+*.bak
+*.mdf
+*.ldf
+*.ndf
+*.trn
+*.env
+*.pwd
+*password*
+*secret*
+.vscode/
+Thumbs.db
